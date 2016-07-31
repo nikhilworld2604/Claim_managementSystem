@@ -38,7 +38,7 @@ public class InitServlet extends GenericServlet implements Servlet {
 		
 		try {
 			connection = DriverManager.
-					getConnection("jdbc:oracle:thin:@localhost:1521:XE", "stefy", "verynice");	
+					getConnection("jdbc:oracle:thin:@localhost:1521:XE", "username", "password");	
 			out.println("****Connected to the database successfully****\n\n");
 			
 		} catch (SQLException e) {
